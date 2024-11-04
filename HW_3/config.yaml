@@ -1,0 +1,14 @@
+device: "cuda"                    # Device selection
+dataset: "CIFAR100"                # Dataset selection: MNIST, CIFAR10, or CIFAR100
+model: "resnet"         # Model selection
+optimizer: "adam"                 # Optimizer choice
+scheduler: "StepLR"               # Scheduler choice
+augmentation: "advanced"             # Data augmentation choice
+batch_size: 64                    # Batch size for DataLoader
+num_epochs: 100                    # Number of training epochs
+early_stopping_patience: 5        # Early stopping patience
+learning_rate: 0.0001              # Learning rate
+weight_decay: 0.00001                # Weight decay for optimizer
+nesterov: True                   # Nesterov momentum
+momentum: 0.9                     # Momentum for optimizer
+wandb_project: "HW_3"             # WandB project name
